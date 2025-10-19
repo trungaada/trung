@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gửi Ty xinh gái ngày 20/10 ❤️</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* CSS Cập nhật */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #fcf4f7; 
+            color: #444;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            text-align: center;
+            overflow: hidden; 
+            position: relative;
+        }
+
+        .container {
+            background-color: rgba(255, 255, 255, 0.95); 
+            padding: 30px; 
+            border-radius: 25px; 
+            box-shadow: 0 15px 35px rgba(233, 30, 99, 0.2); 
+            max-width: 500px; 
+            width: 90%; 
+            z-index: 10; 
+            animation: fadeIn 2s ease-in-out;
+            border: 5px solid #ff99aa; 
+        }
+
+        h1 {
+            color: #e91e63; 
+            font-size: 2.5em; 
+            margin-bottom: 20px;
+            font-family: 'Dancing Script', cursive; 
+            border-bottom: none;
+            display: inline-block;
+            padding-bottom: 0;
+            text-shadow: 1px 1px 2px #f8bbd0;
+        }
+
+        p {
+            font-size: 1.1em; 
+            line-height: 1.6;
+            margin-bottom: 20px;
+            color: #555;
+        }
+
+        .signature {
+            margin-top: 25px; 
+            font-style: italic;
+            color: #ff527b; 
+            font-size: 1em;
+            border-top: 1px dashed #ff99aa;
+            padding-top: 10px; 
+            font-family: 'Dancing Script', cursive;
+        }
+
+        .main-icon {
+            font-size: 3.5em; 
+            color: #ff0000;
+            margin-bottom: 15px;
+            animation: pulse 1s infinite alternate, popIn 0.5s ease-out;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+            display: inline-block;
+        }
+        
+        .main-icon:hover {
+            transform: scale(1.2) rotate(-5deg); 
+            text-shadow: 0 0 15px rgba(255, 0, 0, 0.5);
+        }
+
+        /* Hiệu ứng động của nội dung */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: scale(0.8); }
+            to { opacity: 1; transform: scale(1); }
+        }
+
+        @keyframes pulse {
+            from { transform: scale(1); }
+            to { transform: scale(1.05); }
+        }
+        
+        @keyframes popIn {
+            0% { transform: scale(0); opacity: 0; }
+            80% { transform: scale(1.1); }
+            100% { transform: scale(1); opacity: 1; }
+        }
+
+        /* Hiệu ứng Mưa Trái Tim Đậm */
+        .falling-icon {
+            color: #ff3366; 
+            font-size: 1em;
+            text-shadow: 0 0 5px rgba(255, 0, 0, 0.8); 
+            position: absolute;
+            top: -10px; 
+            animation: fall linear infinite;
+            z-index: 0;
+            animation-timing-function: linear, ease-in-out;
+            animation-iteration-count: infinite, infinite;
+            pointer-events: none; 
+        }
+
+        /* Rơi thẳng như mưa */
+        @keyframes fall {
+            to {
+                transform: translateY(100vh); 
+            }
+        }
+
+        /* TỐI ƯU HÓA: Định nghĩa sẵn 3 kiểu lắc lư (Sway) để giảm lag */
+        @keyframes sway-1 {
+            0% { transform: translateX(0); }
+            50% { transform: translateX(10px); }
+            100% { transform: translateX(0); }
+        }
+        @keyframes sway-2 {
+            0% { transform: translateX(0); }
+            50% { transform: translateX(-15px); }
+            100% { transform: translateX(0); }
+        }
+        @keyframes sway-3 {
+            0% { transform: translateX(0); }
+            50% { transform: translateX(5px); }
+            100% { transform: translateX(0); }
+        }
+        
+        /* RESPONSIVE: Điều chỉnh cho màn hình điện thoại rất nhỏ (<= 400px) */
+        @media (max-width: 400px) {
+            .container {
+                padding: 20px; 
+                border-radius: 20px;
+            }
+            h1 {
+                font-size: 2em; 
+            }
+            p {
+                font-size: 1em;
+            }
+            .main-icon {
+                font-size: 3em; 
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="main-icon" id="mainIcon">❤️</div> 
+        <h1>Chúc Mừng Ngày Phụ Nữ Việt Nam 20/10! 💖</h1>
+        <p>
+            Nhân ngày đặc biệt này,  xin gửi Ty xinh gái những lời chúc tốt đẹp nhất. 
+            Chúc Ty luôn xinh đẹp, mạnh khỏe, hạnh phúc và thành công trong cuộc sống. ❤️
+            
+        </p>
+        <p>
+            Chúc Ty xinh gái ngày càng vui nha. ❤️
+        </p>
+        <div class="signature">
+            Trân trọng gửi tặng,<br>
+            [Ty xinh gái]
+        </div>
+    </div>
+
+    <script>
+        const body = document.body;
+        const numberOfIcons = 60; // FIX LAG: Giảm từ 150 xuống 60
+        const cuteIcons = ['💖', '❤️', '🩷', '💕', '💘', '💗', '💓', '💞', '💝', '💖'];
+
+        function createFallingIcon() {
+            const fallingIcon = document.createElement('div');
+            fallingIcon.classList.add('falling-icon');
+            
+            const icon = cuteIcons[Math.floor(Math.random() * cuteIcons.length)];
+            fallingIcon.innerHTML = icon; 
+
+            // Kích thước (0.6em đến 1.6em)
+            const size = Math.random() * 1.0 + 0.6; 
+            fallingIcon.style.left = `${Math.random() * 100}vw`; 
+            fallingIcon.style.fontSize = `${size}em`;
+            
+            // Tốc độ rơi nhanh hơn (2s đến 6s)
+            const duration = Math.random() * 4 + 2; 
+            
+            // Lắc lư nhẹ (1s đến 3s)
+            const swayDuration = Math.random() * 2 + 1; 
+            fallingIcon.style.animationDuration = `${duration}s, ${swayDuration}s`; 
+            fallingIcon.style.animationDelay = `-${Math.random() * 4}s, -${Math.random() * 2}s`; 
+            
+            // FIX LAG: Sử dụng fixed keyframes và loại bỏ việc tạo thẻ <style> động
+            const swayName = `sway-${Math.floor(Math.random() * 3) + 1}`; // Chọn ngẫu nhiên sway-1, sway-2, hoặc sway-3
+            fallingIcon.style.animationName = `fall, ${swayName}`;
+
+            body.appendChild(fallingIcon);
+
+            // Tối ưu hóa: Xóa phần tử sau khi rơi xong
+            setTimeout(() => {
+                fallingIcon.remove();
+            }, duration * 1000);
+        }
+
+        // Tạo ra các icon trái tim ban đầu
+        for (let i = 0; i < numberOfIcons; i++) {
+            createFallingIcon();
+        }
+
+        // FIX LAG: Tăng interval từ 50ms lên 250ms (Giảm tần suất tạo mới)
+        setInterval(createFallingIcon, 250); 
+
+    </script>
+    
+</body>
+</html>
+
+
+
